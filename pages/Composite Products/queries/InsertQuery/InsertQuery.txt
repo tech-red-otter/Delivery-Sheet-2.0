@@ -1,0 +1,4 @@
+INSERT INTO delivery_export."composite_products" (
+	"composite_product")
+VALUES (
+	'{{insert_form.formData.composite_product}}');

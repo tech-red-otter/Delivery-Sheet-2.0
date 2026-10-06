@@ -1,0 +1,71 @@
+{
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": "{{(utils.update_form_total_weight.data ?? 0) <= 0}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "46k21quv4e",
+  "leftColumn": 41.04035874439462,
+  "minWidth": 120,
+  "mobileBottomRow": 8.8,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 25.871652349671553,
+  "mobileTopRow": 4.8,
+  "onClick": "{{UpdateQuery2.run().then(() => {\n  showAlert('Updated', 'success');\n  closeModal('update_confirmation');\n  SelectQuery2.run();\n  utils.remove_selected_row();\n}).catch(() => {\n  showAlert('Unable to Update', 'error');\n});}}",
+  "parentId": "icmhtrxb8d",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 58.26008968609865,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Confirm",
+  "topRow": 0,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "jvk1xxuqj5",
+  "widgetName": "Button2"
+}

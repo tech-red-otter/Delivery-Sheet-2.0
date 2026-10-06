@@ -1,0 +1,11 @@
+SELECT 
+    *, 
+    address ->> 'city' AS city, 
+    COUNT(*) OVER() AS total_count 
+FROM 
+    delivery_export.deliveries 
+WHERE "customer_name" ilike '%{{data_table.searchText || ""}}%' AND "date" = '{{shipment_date.formattedDate}}'
+AND archived != TRUE
+ORDER BY "{{data_table.sortOrder.column || 'delivery_id'}}" {{data_table.sortOrder.order || 'ASC'}}
+LIMIT {{data_table.pageSize}}
+OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};

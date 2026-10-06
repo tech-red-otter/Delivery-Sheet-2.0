@@ -1,0 +1,1 @@
+SELECT * FROM automation_recorods."refund_credit_notes_line_items" LIMIT 10;

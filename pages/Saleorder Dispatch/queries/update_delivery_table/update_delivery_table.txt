@@ -1,0 +1,5 @@
+insert into public.salesorder_delivery(salesorder_id,salesorder_number,line_items,status,dispatch_date,
+delivery_date,length,diameter,height,weight,no_of_boxes,carrier_id)
+select salesorder_id,salesorder_number,items,status,dispatch_date,delivery_date,length,diameter,height,weight,
+no_of_boxes,carrier_id
+from delivery.sales_orders_dispatch where salesorder_id='{{Table1.selectedRow.salesorder_id}}'

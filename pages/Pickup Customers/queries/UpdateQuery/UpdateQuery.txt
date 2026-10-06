@@ -1,0 +1,14 @@
+UPDATE delivery_export."pickup_customers" SET
+		"reason" = '{{update_form.formData.reason}}' where 
+		"id" = {{data_table.selectedRow.id}}
+
+
+
+
+
+
+
+
+
+
+;

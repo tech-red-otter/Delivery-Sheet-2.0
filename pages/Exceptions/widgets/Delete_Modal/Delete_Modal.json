@@ -1,0 +1,101 @@
+{
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 94.80000000000001,
+  "boxShadow": "none",
+  "canEscapeKeyClose": true,
+  "canOutsideClickClose": true,
+  "children": [
+    {
+      "borderRadius": "0px",
+      "bottomRow": 164.00000000000003,
+      "boxShadow": "none",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [],
+      "dynamicTriggerPathList": [],
+      "flexLayers": [
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "35yoxo4oec"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "center",
+              "id": "48uac29g6e"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "end",
+              "id": "lryg8kw537"
+            },
+            {
+              "align": "end",
+              "id": "qq02lh7ust"
+            }
+          ]
+        }
+      ],
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": "true",
+      "labelTextSize": "0.875rem",
+      "leftColumn": 0,
+      "minHeight": 140,
+      "mobileBottomRow": 156,
+      "mobileTopRow": 0,
+      "parentColumnSpace": 1,
+      "parentId": "i3whp03wf0",
+      "parentRowSpace": 1,
+      "positioning": "vertical",
+      "responsiveBehavior": "fill",
+      "rightColumn": 453.1875,
+      "shouldScrollContents": false,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "useAutoLayout": true,
+      "version": 1,
+      "widgetId": "zi8fjakv8o",
+      "widgetName": "Canvas3"
+    }
+  ],
+  "detachFromLayout": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "height": 166.00000000000003,
+  "isLoading": false,
+  "labelTextSize": "0.875rem",
+  "leftColumn": 20,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 8,
+  "mobileBottomRow": 175.6,
+  "mobileLeftColumn": 20,
+  "mobileRightColumn": 44,
+  "mobileTopRow": 160,
+  "mobileWidthInPercentage": 0.3717776584317938,
+  "parentColumnSpace": 18.8828125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "responsiveBehavior": "hug",
+  "rightColumn": 44,
+  "shouldScrollContents": false,
+  "topRow": 78.4,
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "widgetId": "i3whp03wf0",
+  "widgetName": "Delete_Modal",
+  "width": 456,
+  "widthInPercentage": 0.3717776584317938
+}

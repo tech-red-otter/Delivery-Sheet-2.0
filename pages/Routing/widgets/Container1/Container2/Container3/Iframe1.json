@@ -1,0 +1,54 @@
+{
+  "alignment": "start",
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": 1,
+  "bottomRow": 38.999999999999986,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "displayName": "Iframe",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "source"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a84667dbdc548d14f7c83df551151550.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "xjvlpaqfdf",
+  "leftColumn": 0,
+  "mobileBottomRow": 32,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
+  "parentColumnSpace": 19.671875,
+  "parentId": "t3el6esuz6",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "embed"
+  ],
+  "source": "{{ \ndata_ops.get_route_map.data ?? ''}}",
+  "tags": [
+    "Display"
+  ],
+  "topRow": 0,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "70hqtfh3l6",
+  "widgetName": "Iframe1",
+  "widthInPercentage": 0.9711431742508324
+}

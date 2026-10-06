@@ -1,0 +1,84 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11.8,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_table.selectedRow.customer_name))(selected_box_customer.options, selected_box_customer.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onFilterUpdate"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilterUpdate"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "xngda3xvoc",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "For customer",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 11.399999999999999,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 4.8,
+  "onFilterUpdate": "{{update_from_customer2.run()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 9.6953125,
+  "parentId": "36quimiff9",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": true,
+  "sourceData": "{{update_from_customer2.data.map( (obj) =>{ return  {'label': obj.label, 'value': obj.value } })}}",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 5.2,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "8w5apgrdtm",
+  "widgetName": "selected_box_customer"
+}

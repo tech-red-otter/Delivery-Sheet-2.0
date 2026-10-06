@@ -1,0 +1,8 @@
+{
+ 	"response": {{delivery_routes1.data[0].response}},
+ 	"timestamp":  '{{delivery_routes1.data[0].timestamp}}',
+	"route": {{routes_table.selectedRowIndex}},
+	"job_map": {{delivery_routes1.data[0].jobs}},
+	"position": '{{update_position_step.text}}',
+	"job":{{unassigned.triggeredRow}}
+}

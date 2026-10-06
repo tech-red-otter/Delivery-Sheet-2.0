@@ -1,0 +1,10 @@
+WITH update_dispatch AS (
+  UPDATE delivery.sales_orders_dispatch 
+  SET delivery_date = '{{ txt_delivery_date.formattedDate }}',
+      status = 'deliverd'
+  WHERE salesorder_id = '{{ Table1.selectedRow.salesorder_id }}'
+)
+UPDATE public.salesorder_delivery 
+SET status = 'deliverd', 
+    delivery_date = '{{ txt_delivery_date.formattedDate }}'
+WHERE salesorder_id = '{{ Table1.selectedRow.salesorder_id }}';

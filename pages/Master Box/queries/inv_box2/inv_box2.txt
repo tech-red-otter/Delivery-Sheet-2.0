@@ -1,0 +1,1 @@
+SELECT sku as value, name as label, sku, package_details ->> 'weight' as weight FROM delivery.inv_items where custom_field_hash ->> 'cf_auto_consumer_category' != 'Make Your Own' or custom_field_hash ->> 'cf_auto_consumer_category' = '' or custom_field_hash ->> 'cf_auto_consumer_category' is null order by name;

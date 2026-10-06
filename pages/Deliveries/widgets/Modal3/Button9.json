@@ -1,0 +1,61 @@
+{
+  "alignment": "end",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 17,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "y26bkrgxzr",
+  "leftColumn": 46.780269058295964,
+  "minWidth": 120,
+  "mobileBottomRow": 21.8,
+  "mobileLeftColumn": 46.780269058295964,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 17.8,
+  "onClick": "{{upadate_delivery_partner.run().then(() => {\n  SelectQuery1.run();\n  showAlert('UPDATED', 'success');\n  closeModal('Modal3');\n  opps.reset_selected_row();\n}).catch(() => {\n  showAlert('UNABLE TO UPDATE', 'error');\n});}}",
+  "parentId": "hepuqd3mp2",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Confirm",
+  "topRow": 13,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "hpzbprp6l2",
+  "widgetName": "Button9"
+}

@@ -1,0 +1,34 @@
+insert into delivery.sales_orders_dispatch(salesorder_id,salesorder_number,customer_id,items,shiping_address,
+shipment_date,payment_mode,place_of_supply,total_amount,status,created_at,created_by,cf_sales_order_source)
+SELECT sd.salesorder_id,sd.salesorder_number,sd.customer_id,sd.line_items,sd.shipping_address,
+    NULLIF(TRIM(sd.shipment_date), '')::date AS shipment_date,
+	pm.payment_mode,sd.place_of_supply,sd.total::numeric,'pending' AS status,
+    NOW() + INTERVAL '5 hours 30 minutes' AS created_at,
+    'manu.pratap@smartbeej.com' AS created_by,
+    sd.cf_sales_order_source 
+FROM delivery.salesorder_details sd
+
+-- Extract Payment Mode from JSONB custom fields
+LEFT JOIN LATERAL (
+    SELECT elem->>'value' AS payment_mode
+    FROM jsonb_array_elements(sd.custom_fields::jsonb) AS elem
+    WHERE elem->>'label' ILIKE '%Payment Collection Instructions for Riders%'
+    LIMIT 1
+) pm ON TRUE
+
+WHERE sd.cf_sales_order_source IN ('Website - Non NCR', 'Website - Dry Store','Manual - Website - Non NCR')
+  AND sd.salesorder_number NOT ILIKE 'TMP-%' AND sd.status not in('draft','void')
+
+  -- 1. Check in public.salesorder_delivery: if exists, exclude order
+  AND NOT EXISTS (
+      SELECT 1 
+      FROM public.salesorder_delivery spd 
+      WHERE spd.salesorder_id = sd.salesorder_id
+  )
+
+  -- 2. Check in delivery.sales_orders_dispatch: if exists, exclude order
+  AND NOT EXISTS (
+      SELECT 1 
+      FROM delivery.sales_orders_dispatch sod 
+      WHERE sod.salesorder_id = sd.salesorder_id
+  );

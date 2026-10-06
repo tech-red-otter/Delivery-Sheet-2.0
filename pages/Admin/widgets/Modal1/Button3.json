@@ -1,0 +1,65 @@
+{
+  "alignment": "end",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 32.4390625,
+  "boxShadow": "none",
+  "buttonColor": "#ef4444",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": "{{del_shipment_date.formattedDate.length < 5 }}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "nlyftprhko",
+  "leftColumn": 46.780269058295964,
+  "minWidth": 120,
+  "mobileBottomRow": 25.8,
+  "mobileLeftColumn": 46.780269058295964,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 21.8,
+  "onClick": "{{clean_delivery_data.run().then(() => {\n  showAlert('CLEANED', 'success');\n}).catch(() => {\n  showAlert('ERROR CLEANIN', 'error');\n});}}",
+  "parentId": "1abbbyez6y",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Confirm",
+  "topRow": 28.4390625,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "6murph7le4",
+  "widgetName": "Button3"
+}

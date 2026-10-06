@@ -1,0 +1,1 @@
+SELECT sku as value, name as label, sku, package_details ->> 'weight' as weight FROM data_imports_n8n.inv_items

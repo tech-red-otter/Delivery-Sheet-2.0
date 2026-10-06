@@ -1,0 +1,34 @@
+SELECT
+    count(*) AS "MYO",
+    (SELECT count(*)
+     FROM delivery.delivery_box db 
+     JOIN delivery.sales_orders_map som 
+     ON db.id = som.delivery_box::uuid 
+     WHERE db.shipment_date = '{{shipment_date.formattedDate}}'
+     AND som.archived != true
+		 AND som.make_your_own = 'false') AS "CURATED",
+     (SELECT count(*)
+     FROM delivery.delivery_box db 
+     LEFT JOIN delivery.sales_orders_map som 
+     ON db.id = som.delivery_box::uuid 
+     WHERE db.shipment_date = '{{shipment_date.formattedDate}}'
+     AND (som.make_your_own = 'false')
+		 AND som.archived != true
+		 AND db.box_code != 'BLANK_BOX') as "ASSIGNED",
+		  ( SELECT count(*)
+     FROM delivery.delivery_box db 
+     LEFT JOIN delivery.sales_orders_map som 
+     ON db.id = som.delivery_box::uuid 
+     WHERE db.shipment_date = '{{shipment_date.formattedDate}}'
+     AND (som.make_your_own = 'false') 
+		 AND db.box_code = 'BLANK_BOX'
+		 AND som.archived != true) AS "UNASSIGNED"
+FROM delivery.delivery_box db 
+JOIN delivery.sales_orders_map som 
+ON db.id = som.delivery_box::uuid 
+WHERE 
+    db.shipment_date = '{{shipment_date.formattedDate}}'
+    AND som.make_your_own = 'true'
+		AND som.archived != true
+		
+;

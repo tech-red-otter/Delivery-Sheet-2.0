@@ -1,0 +1,27 @@
+SELECT 
+    som.*,
+    bc.contact_name, 
+    db.box_code,
+    (SELECT products 
+     FROM delivery_export.exceptions 
+     WHERE customer = som.customer_id) AS exceptions,
+    (SELECT box_code 
+     FROM delivery_export.delivery_box 
+     WHERE id = db.master_box) AS master_box,
+    (SELECT json_agg(isli.name)
+     FROM data_imports_n8n.inv_salesorders_list_item isli 
+     WHERE som.salesorder_id = isli.salesorder_id) AS sales_order_items,
+    COUNT(*) OVER() AS total_count
+FROM delivery_export.sales_orders_map som
+LEFT JOIN data_imports_n8n.books_contacts bc 
+    ON som.customer_id = bc.contact_id
+LEFT JOIN delivery_export.delivery_box db 
+    ON som.delivery_box::uuid = db.id
+WHERE 
+    som.date = '2026-04-11'
+    --AND som.make_your_own = false
+   -- AND db.box_code = 'BLANK_BOX'
+   -- AND som.archived IS DISTINCT FROM TRUE
+ORDER BY salesorder_number ASC
+
+OFFSET 0;

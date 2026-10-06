@@ -1,0 +1,225 @@
+{
+  "alignment": "end",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 224.2390625,
+  "boxShadow": "none",
+  "canEscapeKeyClose": true,
+  "canOutsideClickClose": true,
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 170,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [
+        {
+          "children": [
+            {
+              "align": "center",
+              "id": "ghq7kfx1o6"
+            },
+            {
+              "align": "end",
+              "id": "w6pe44a6fh"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "nvgr82kmfi"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "end",
+              "id": "glsuc7aq8j"
+            },
+            {
+              "align": "end",
+              "id": "63usm0k5an"
+            }
+          ]
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "dxi63alzo7",
+      "layout": [
+        {
+          "isPermanent": true,
+          "layout": [
+            {
+              "isPermanent": true,
+              "layout": [
+                {
+                  "allowedWidgetTypes": [
+                    "TEXT_WIDGET"
+                  ],
+                  "isDropTarget": true,
+                  "isPermanent": true,
+                  "layout": [
+                    {
+                      "alignment": "start",
+                      "widgetId": "ghq7kfx1o6",
+                      "widgetType": "TEXT_WIDGET"
+                    }
+                  ],
+                  "layoutId": "vqnophmicu",
+                  "layoutStyle": {
+                    "flexGrow": 1,
+                    "minHeight": "40px"
+                  },
+                  "layoutType": "WIDGET_ROW"
+                },
+                {
+                  "allowedWidgetTypes": [
+                    "ICON_BUTTON_WIDGET"
+                  ],
+                  "isDropTarget": true,
+                  "isPermanent": true,
+                  "layout": [
+                    {
+                      "alignment": "start",
+                      "widgetId": "w6pe44a6fh",
+                      "widgetType": "ICON_BUTTON_WIDGET"
+                    }
+                  ],
+                  "layoutId": "a6cekr21bu",
+                  "layoutStyle": {
+                    "minHeight": "40px",
+                    "minWidth": "30px"
+                  },
+                  "layoutType": "WIDGET_ROW"
+                }
+              ],
+              "layoutId": "pwhpz9mxzq",
+              "layoutStyle": {
+                "minHeight": "40px"
+              },
+              "layoutType": "LAYOUT_ROW"
+            },
+            {
+              "isDropTarget": true,
+              "isPermanent": true,
+              "layout": [],
+              "layoutId": "75i61spisk",
+              "layoutStyle": {
+                "minHeight": "40px",
+                "width": "100%"
+              },
+              "layoutType": "ALIGNED_LAYOUT_COLUMN"
+            },
+            {
+              "isDropTarget": true,
+              "isPermanent": true,
+              "layout": [
+                {
+                  "alignment": "end",
+                  "widgetId": "glsuc7aq8j",
+                  "widgetType": "BUTTON_WIDGET"
+                },
+                {
+                  "alignment": "end",
+                  "widgetId": "63usm0k5an",
+                  "widgetType": "BUTTON_WIDGET"
+                }
+              ],
+              "layoutId": "u240scrvix",
+              "layoutStyle": {
+                "minHeight": "40px"
+              },
+              "layoutType": "ALIGNED_WIDGET_ROW"
+            }
+          ],
+          "layoutId": "t3c7qo8rda",
+          "layoutType": "LAYOUT_COLUMN"
+        }
+      ],
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 130,
+      "minWidth": 450,
+      "mobileBottomRow": 218.375,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 64,
+      "mobileTopRow": 0,
+      "parentColumnSpace": 1,
+      "parentId": "bgf0cde86e",
+      "parentRowSpace": 1,
+      "positioning": "vertical",
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 64,
+      "shouldScrollContents": false,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "useAutoLayout": true,
+      "version": 1,
+      "widgetId": "nbsluvbwm9",
+      "widgetName": "Canvas3"
+    }
+  ],
+  "detachFromLayout": true,
+  "displayName": "Modal",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "height": 172.390625,
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.b374721fa8e1aeab7cf326c2d865506f.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "key": "l515u3gpeu",
+  "leftColumn": 40,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 8,
+  "mobileBottomRow": 326.596875,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 304.75937500000003,
+  "parentColumnSpace": 13.953125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "dialog",
+    "popup",
+    "notification"
+  ],
+  "shouldScrollContents": true,
+  "tags": [
+    "Layout"
+  ],
+  "topRow": 207.2,
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "widgetId": "bgf0cde86e",
+  "widgetName": "Modal2",
+  "width": 456,
+  "widthInPercentage": 0.37167036625971145
+}

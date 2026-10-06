@@ -1,0 +1,4 @@
+SELECT DISTINCT cf_sales_order_source
+FROM public.salesorders
+WHERE cf_sales_order_source IS NOT NULL
+ORDER BY cf_sales_order_source limit 200;

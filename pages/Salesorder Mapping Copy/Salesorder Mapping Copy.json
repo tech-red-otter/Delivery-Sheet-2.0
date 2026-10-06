@@ -1,0 +1,72 @@
+{
+  "gitSyncId": "667936e8fd08ec4bd69cc0e7_eccbb05b-f956-4927-9f0f-a4c87cb66ac2",
+  "unpublishedPage": {
+    "isHidden": false,
+    "layouts": [
+      {
+        "dsl": {
+          "backgroundColor": "none",
+          "bottomRow": 1864,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "flexLayers": [
+            {
+              "children": [
+                {
+                  "align": "start",
+                  "id": "mvubsemxfo"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "start",
+                  "id": "oke59tmqmz"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "start",
+                  "id": "47q5d82unl"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "start",
+                  "id": "yio4apxbvi"
+                }
+              ]
+            }
+          ],
+          "leftColumn": 0,
+          "minHeight": 900,
+          "mobileBottomRow": 1980.5,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "vertical",
+          "responsiveBehavior": "fill",
+          "rightColumn": 1174,
+          "snapColumns": 64,
+          "snapRows": 125,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": true,
+          "version": 94,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
+      }
+    ],
+    "name": "Salesorder Mapping Copy",
+    "slug": "salesorder-mapping-copy"
+  }
+}

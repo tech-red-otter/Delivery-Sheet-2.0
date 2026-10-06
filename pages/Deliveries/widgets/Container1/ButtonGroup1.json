@@ -1,0 +1,167 @@
+{
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 12.8,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonn7v8dgff5c.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonphabuwevku.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonphabuwevku.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton2.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButtonn7v8dgff5c.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton1.isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButtonphabuwevku.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton2.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonn7v8dgff5c.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton1.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButtonphabuwevku.onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButtonphabuwevku.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonn7v8dgff5c.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": "{{shipment_date.formattedDate.length < 3 }}",
+      "isVisible": true,
+      "label": "Verify data for routes",
+      "menuItems": {},
+      "onClick": "{{validate_delivery.run().then(() => {\n  showModal('Validation');\n}).catch(() => {\n  showModal('Validation');\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": "{{shipment_date.formattedDate.length < 3 }}",
+      "isVisible": true,
+      "label": "Delete and regenerate all",
+      "menuItems": {},
+      "onClick": "{{showModal('Modal2');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtonn7v8dgff5c": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "buttonVariant": "filled",
+      "id": "groupButtonn7v8dgff5c",
+      "index": 3,
+      "isDisabled": "{{shipment_date.formattedDate.length < 3 }}",
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Generate deliveries",
+      "menuItems": {},
+      "onClick": "{{generate_deliveris.run().then(() => {\n  showAlert(generate_deliveris.data.msg, 'success');\n}).catch(() => {\n  showAlert(generate_deliveris.data.msg, 'error');\n});}}",
+      "placement": "CENTER",
+      "widgetId": "nfs559pho9"
+    },
+    "groupButtonphabuwevku": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "buttonVariant": "filled",
+      "id": "groupButtonphabuwevku",
+      "index": 2,
+      "isDisabled": "{{data_table.selectedRows.length < 1 || shipment_date.formattedDate.length < 3 }}",
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Update delivery partner",
+      "menuItems": {},
+      "onClick": "{{showModal('Modal3');}}",
+      "placement": "CENTER",
+      "widgetId": "qz905c1pj1"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "9bk146rc3h",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 25.359375,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 20.359375,
+  "orientation": "horizontal",
+  "parentColumnSpace": 6.6953125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 94.36636636636636,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 7.8,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "bd2v6p0tu4",
+  "widgetName": "ButtonGroup1"
+}

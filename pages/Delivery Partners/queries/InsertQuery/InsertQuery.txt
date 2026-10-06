@@ -1,0 +1,22 @@
+INSERT INTO delivery_export."backend_autorouting" (
+	"partner_name",
+	"max_tasks_per_rider",
+	"max_box_per_rider",
+	"max_weight_per_rider",
+	"max_travel_time",
+	"speed_factor",
+	"start_location",
+	"end_location",
+	"skills",
+	"active")
+VALUES (
+	'{{insert_form.formData.partner_name}}',
+	'{{insert_form.formData.max_tasks_per_rider}}',
+	'{{insert_form.formData.max_box_per_rider}}',
+	'{{insert_form.formData.max_weight_per_rider}}',
+	'{{insert_form.formData.max_travel_time}}',
+	'{{insert_form.formData.speed_factor}}',
+	'{{insert_form.formData.start_location}}',
+	'{{insert_form.formData.end_location}}',
+	'{{insert_form.formData.skills}}',
+	'{{insert_form.formData.active}}');

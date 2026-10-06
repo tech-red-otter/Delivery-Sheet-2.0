@@ -1,0 +1,2 @@
+DELETE FROM delivery_export."pickup_customers" where 
+		"id" = {{data_table.triggeredRow.id}};

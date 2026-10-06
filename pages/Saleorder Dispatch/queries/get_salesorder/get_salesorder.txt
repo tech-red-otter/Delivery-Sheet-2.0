@@ -1,0 +1,8 @@
+select d.salesorder_id,d.salesorder_number,d.customer_id,c.contact_name,d.shiping_address,d.shipment_date,
+d.payment_mode,d.place_of_supply,d.dispatch_number,d.dispatch_date,d.delivery_date,d.length,d.diameter,
+d.height,d.weight,d.no_of_boxes,d.total_amount,d.carrier_id,p.carrier_name,d.status from delivery.sales_orders_dispatch d 
+inner join public.customers c on c.customer_id=d.customer_id
+left join delivery.courier_partner p on p.carrier_id=d.carrier_id
+where 1=1
+{{ only_deliverd.isChecked ? "and d.status = 'deliverd' and d.shipment_date = '" + DatePicker1.formattedDate + "'" : " and d.status != 'deliverd'" }}
+order by d.shipment_date

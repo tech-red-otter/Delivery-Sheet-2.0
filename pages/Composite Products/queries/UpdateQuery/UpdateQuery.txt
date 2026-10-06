@@ -1,0 +1,4 @@
+UPDATE delivery_export."composite_products" 
+SET "products" = ARRAY(SELECT json_array_elements('{{ JSON.stringify(update_form.formData.products.map(product => { return {...product, weight: (product.weight  ?? 0) === 0 ? inv_items.data.find(inv_item => inv_item.value.toUpperCase() === product.name.toUpperCase()).weight : product.weight}})) }}'::json)::json),
+"archived" = {{update_form.formData.archived}}
+WHERE "composite_product" = '{{ data_table.selectedRow.composite_product }}';

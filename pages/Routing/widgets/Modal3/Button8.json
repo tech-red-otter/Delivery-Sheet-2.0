@@ -1,0 +1,68 @@
+{
+  "alignment": "end",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 27.400000000000002,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": "{{!update_position_step.isValid}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "stwhgdsjrt",
+  "leftColumn": 46.780269058295964,
+  "minWidth": 120,
+  "mobileBottomRow": 31.400000000000002,
+  "mobileLeftColumn": 46.780269058295964,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 27.400000000000002,
+  "onClick": "{{add_delivery_to_route_api.run().then(() => {\n  opps.refresh_and_reset();\n});\ncloseModal('Modal3');}}",
+  "parentId": "m9qwwdiu25",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Confirm",
+  "topRow": 23.400000000000002,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "mrr1fcznp4",
+  "widgetName": "Button8"
+}

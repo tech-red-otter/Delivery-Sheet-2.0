@@ -1,0 +1,2 @@
+
+SELECT id carrier_id , partner_name carrier_name FROM delivery.backend_autorouting WHERE type='NON-NCR' and active=true;

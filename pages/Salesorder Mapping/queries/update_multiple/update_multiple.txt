@@ -1,0 +1,7 @@
+{{
+
+{
+	orignal: data_table.selectedRows,
+	update: multi_box_assignment.selectedOptionValue
+}
+}}

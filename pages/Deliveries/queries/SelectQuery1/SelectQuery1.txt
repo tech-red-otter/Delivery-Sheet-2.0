@@ -1,0 +1,12 @@
+SELECT 
+    *, 
+    address ->> 'city' AS city, 
+    COUNT(*) OVER() AS total_count 
+FROM 
+    delivery.deliveries
+WHERE "customer_name" ILIKE '{{ "%" + (data_table.searchText || "") + "%" }}'
+  AND "date" = '{{ shipment_date.formattedDate }}'
+  AND archived IS NOT TRUE 
+  {{ dl_city_1.selectedOptionValues && dl_city_1.selectedOptionValues.length > 0 ? " AND TRIM(address ->> 'city') IN ('" + dl_city_1.selectedOptionValues.join("','") + "')" : "" }}
+ORDER BY 
+  {{ data_table.sortOrder.column || 'delivery_id' }} {{ data_table.sortOrder.order || 'ASC' }}

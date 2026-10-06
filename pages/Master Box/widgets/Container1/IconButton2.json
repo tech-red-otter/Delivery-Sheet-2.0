@@ -1,0 +1,65 @@
+{
+  "alignment": "start",
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4.1,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "displayName": "Icon button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconName": "download",
+  "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
+  "isDeprecated": false,
+  "isDisabled": "{{utils.creating_csv}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "g92wqa8l3r",
+  "leftColumn": 40.93693693693694,
+  "minWidth": 50,
+  "mobileBottomRow": 9.7,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 3.742690058479532,
+  "mobileTopRow": 4.8,
+  "onClick": "{{utils.create_download_csv();}}",
+  "parentColumnSpace": 6.6953125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 48.62462462462462,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "tooltip": "Download all box data",
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "y9y2r2pwvb",
+  "widgetName": "IconButton2"
+}

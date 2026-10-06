@@ -1,0 +1,9 @@
+SELECT 
+   distinct TRIM(address ->> 'city') AS city
+   
+FROM 
+    delivery.deliveries
+WHERE "customer_name" ilike '%{{data_table.searchText || ""}}%' AND "date" = '{{shipment_date.formattedDate}}'
+AND archived != TRUE
+
+

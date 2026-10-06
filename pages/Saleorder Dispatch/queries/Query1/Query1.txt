@@ -1,0 +1,6 @@
+SELECT * FROM public.salesorders WHERE 
+SHIPMENT_DATE='{{dp_shipment_date.formattedDate}}' and 
+status not in('void','draft') and cf_sales_order_type not in('Master Subscription')
+and salesorder_id not in(select salesorder_id from public.salesorder_delivery) 
+AND salesorder_number NOT ILIKE 'TMP%'
+ORDER BY customer_name

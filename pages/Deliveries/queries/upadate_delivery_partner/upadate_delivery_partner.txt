@@ -1,0 +1,4 @@
+{
+	records: {{data_table.selectedRows.map(e => e.delivery_id)}},
+	update: {{update_delivery.selectedOptionValue}}
+}

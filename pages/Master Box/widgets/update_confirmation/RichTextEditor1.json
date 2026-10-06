@@ -1,0 +1,65 @@
+{
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 64.2,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultText": "### <span style=\"color:#8e44ad;\">Total Weight:</span> <span style=\"color:#27ae60;\">{{utils.update_form_total_weight()}} KG</span><span style=\"color:#8e44ad;\"> | Active :</span> <span style=\"color:#27ae60;\">{{update_form.formData.active}}</span> | <span style=\"color:#27ae60;\">{{update_form.formData.packaging}}</span>\n\n### <span style=\"color:#8e44ad;\">Products :</span>\n**<span style=\"color:#27ae60;\">{{utils.update_products()}}</span>**\n\n### <span style=\"color:#8e44ad;\">Curated Box:</span>\n**<span style=\"color:#27ae60;\">{{curated_box_for_selected.selectedOptionLabels.join(\"<br>\")}}</span>**\n\n### <span style=\"color:#8e44ad;\">Customer Name :</span> <span style=\"color:#27ae60;\">{{ selected_box_customer.selectedOptionLabel }}</span>\n\n",
+  "displayName": "Rich Text Editor",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.074d534389d0f6262ecfbd8e81539d08.svg",
+  "inputType": "markdown",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isToolbarHidden": true,
+  "isVisible": true,
+  "key": "qrl52qjah6",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Update values",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 44.400000000000006,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 14.400000000000002,
+  "parentColumnSpace": 6.96875,
+  "parentId": "icmhtrxb8d",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "input",
+    "rte"
+  ],
+  "tags": [
+    "Inputs"
+  ],
+  "topRow": 5.2,
+  "type": "RICH_TEXT_EDITOR_WIDGET",
+  "version": 1,
+  "widgetId": "ap495y3ssk",
+  "widgetName": "RichTextEditor1",
+  "widthInPercentage": 0.3470817120622568
+}

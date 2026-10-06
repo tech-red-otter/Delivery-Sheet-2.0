@@ -1,0 +1,8 @@
+SELECT 
+    box_code as value, 
+    box_code as label 
+FROM 
+    delivery_export."master_box" 
+WHERE 
+    active IS TRUE 
+    AND (customer_name = '' OR customer_name IS NULL)

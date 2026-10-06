@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "667936e8fd08ec4bd69cc0e7_6687039ea3c2252976088e9c",
+  "id": "Master Box_utils",
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "Master Box",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "creating_csv",
+        "value": "false"
+      }
+    ]
+  }
+}

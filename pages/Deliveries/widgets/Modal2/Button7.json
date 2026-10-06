@@ -1,0 +1,61 @@
+{
+  "alignment": "end",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 15.0390625,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3gwi5kuozg",
+  "leftColumn": 46.780269058295964,
+  "minWidth": 120,
+  "mobileBottomRow": 19.8375,
+  "mobileLeftColumn": 46.780269058295964,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 15.837499999999999,
+  "onClick": "{{delete_and_regenerate_all.run().then(() => {\n  SelectQuery1.run();\n  showAlert('REGENERATING', 'success');\n  closeModal('Modal2');\n}).catch(() => {\n  showAlert(delete_and_regenerate_all.data?.msg ?? 'UNABLE TO REGENERATE', 'error');\n});}}",
+  "parentId": "nbsluvbwm9",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Confirm",
+  "topRow": 11.0390625,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "63usm0k5an",
+  "widgetName": "Button7"
+}

@@ -1,0 +1,51 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9.200000000000001,
+  "defaultCheckedState": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onCheckChange"
+    }
+  ],
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "0zntu4lrjn",
+  "label": "Only deliverd",
+  "labelPosition": "Right",
+  "leftColumn": 21.333333333333332,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 16.2,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 12.2,
+  "needsErrorInfo": false,
+  "onCheckChange": "{{get_salesorder.run()}}",
+  "parentColumnSpace": 10.96875,
+  "parentId": "0g3ybf684y",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 42.66666666666667,
+  "topRow": 5.2,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "jghiqfcm09",
+  "widgetName": "only_deliverd"
+}

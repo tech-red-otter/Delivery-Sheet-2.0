@@ -1,0 +1,69 @@
+{
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": "{{shipment_date.formattedDate.length < 3 }}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "y26bkrgxzr",
+  "leftColumn": 52.634900990099005,
+  "minWidth": 120,
+  "mobileBottomRow": 8.8,
+  "mobileLeftColumn": 22.905940594059416,
+  "mobileRightColumn": 34.27103960396039,
+  "mobileTopRow": 4.8,
+  "onClick": "{{validate_salesorders.run().then(() => {\n  showModal('Modal2');\n}).catch(() => {\n  showAlert('Something went wrong', 'error');\n});}}",
+  "parentColumnSpace": 6.9296875,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Validate and Clean",
+  "topRow": 0,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "do1zjpe7jd",
+  "widgetName": "validate_data"
+}

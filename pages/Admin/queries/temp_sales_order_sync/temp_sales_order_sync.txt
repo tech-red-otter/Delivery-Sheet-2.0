@@ -1,0 +1,1 @@
+SELECT * FROM data_import_temp_tables."so_iteration_temp_1" 

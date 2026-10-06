@@ -1,0 +1,5 @@
+select 
+  count(*) filter (where status = 'pending') as pending,
+  count(*) filter (where status = 'dispatched') as dispatched,
+  count(*) filter (where status = 'delivered') as delivered
+from delivery.sales_orders_dispatch 

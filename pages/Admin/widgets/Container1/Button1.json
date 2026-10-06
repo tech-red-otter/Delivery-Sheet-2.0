@@ -1,0 +1,58 @@
+{
+  "alignment": "center",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "#ef4444",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "nlyftprhko",
+  "leftColumn": 25.407178217821784,
+  "minWidth": 120,
+  "mobileBottomRow": 3.8,
+  "mobileLeftColumn": 181.59722222222223,
+  "mobileRightColumn": -117.59722222222223,
+  "mobileTopRow": 0,
+  "onClick": "{{showModal('Modal1');}}",
+  "parentColumnSpace": 13.96875,
+  "parentId": "s6pdt2w4ii",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 38.59282178217822,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Delete all data for date",
+  "topRow": 0,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "9ymjxurwu9",
+  "widgetName": "Button1"
+}

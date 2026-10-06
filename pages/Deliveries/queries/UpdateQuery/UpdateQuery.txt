@@ -1,0 +1,7 @@
+UPDATE delivery_export."deliveries" set
+    "large_box" = '{{update_form.sourceData.large_box}}',
+		"small_box" = '{{update_form.formData.small_box}}',
+		"coordinates"= '{{update_form.formData.coordinates}}',
+		"deliveryPartner" = '{{update_form.formData.deliveryPartner}}',
+		"address" = '{{JSON.stringify(update_form.formData.address)}}'
+WHERE "delivery_id" = '{{data_table.selectedRow.delivery_id}}'

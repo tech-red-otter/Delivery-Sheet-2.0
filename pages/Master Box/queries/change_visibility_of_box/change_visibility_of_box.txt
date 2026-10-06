@@ -1,0 +1,3 @@
+UPDATE delivery_export."master_box"
+SET "active" = {{data_table.updatedRow.active}}
+WHERE "box_code" = '{{data_table.updatedRow.box_code}}';

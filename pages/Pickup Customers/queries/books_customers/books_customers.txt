@@ -1,0 +1,3 @@
+ SELECT contact_id as value, contact_name as label 
+  FROM data_imports_n8n."books_contacts"
+  

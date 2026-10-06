@@ -1,0 +1,72 @@
+{
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 24.800000000000008,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": "{{shipment_date.formattedDate.length < 3 }}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "4b6wvgmfjx",
+  "leftColumn": 52.771929824561404,
+  "minWidth": 120,
+  "mobileBottomRow": 52.45,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 10.898514851485146,
+  "mobileTopRow": 48.45,
+  "onClick": "{{\nawait all_data_for_date.run();\n\ndownload([ `salesorder_number, customer_id, contact_name, box_code, salesorder_id, delivery_box, products, exceptions`,...all_data_for_date.data.map( ite => `${ite.salesorder_number},${ite.customer_id},${ite.contact_name},${ite.box_code},${ite.salesorder_id},${ite.delivery_box},\"${ite.sales_order_items.join(' | ')}\",\"${ite.exceptions?.join(' | ') ?? ''}\" `)].join('\\n'), 'salesordermap.csv', 'text/csv');}}",
+  "parentColumnSpace": 6.6953125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Download all data",
+  "topRow": 20.800000000000008,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "qhjtok5g2e",
+  "widgetName": "Button5"
+}

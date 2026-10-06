@@ -1,0 +1,2 @@
+SELECT count(*) as total FROM delivery_export."master_box"
+WHERE "box_code" ilike '%{{data_table.searchText || ""}}%'

@@ -1,0 +1,24 @@
+SELECT 
+    som.*,
+    bc.contact_name, 
+    db.box_code,
+		(SELECT products from delivery.exceptions WHERE customer = som.customer_id) as exceptions,
+    (SELECT json_agg(isli.name || ' (' || isli.quantity || ')') FROM zoho_records.inv_salesorders_list_item isli WHERE som.salesorder_id = isli.salesorder_id) AS sales_order_items
+FROM 
+    delivery.sales_orders_map som
+LEFT JOIN 
+    public.customers bc 
+    ON som.customer_id = bc.customer_id
+LEFT JOIN 
+    delivery.delivery_box db 
+    ON som.delivery_box::uuid = db.id
+WHERE 
+    som.date = '{{shipment_date.formattedDate}}'
+    AND EXISTS (
+        SELECT 1
+        FROM zoho_records.inv_salesorders_list_item isli
+        WHERE som.salesorder_id = isli.salesorder_id
+          AND isli.name ILIKE '%{{order_item.text}}%'
+    )
+		and som.archived != TRUE
+ORDER BY bc.contact_name

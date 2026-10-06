@@ -1,0 +1,9 @@
+UPDATE delivery_export."master_box"
+SET "products" = ARRAY [{{update_form.formData.products.map(product => `'{ "name": "${product.name}", "weight": ${(product.weight  ?? 0) === 0 ? inv_items.data.find(inv_item => inv_item.value.toUpperCase() === product.name.toUpperCase()).weight : product.weight}, "quantity": ${product.quantity} }'`).join(",")}}]::jsonb [],
+	"weight" = {{ utils.update_form_total_weight() }},
+	"curated_box_name" = '{ {{curated_box_for_selected.selectedOptionValues.join(",")}} }',
+	"customer_name" = '{{selected_box_customer.selectedOptionValue}}',
+	"active" = {{update_form.formData.active}},
+	"description" = '{{update_form.formData.description}}',
+	"packaging" = '{{update_form.formData.packaging}}'
+WHERE "box_code" = '{{data_table.selectedRow.box_code}}';

@@ -1,0 +1,61 @@
+{
+  "alignment": "end",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 40.400000000000006,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{ \n  !txt_dispatch_number.isValid || \n  !txt_length.isValid || \n  !txt_height.isValid || \n  !txt_diameter.isValid || \n  !txt_weight.isValid || \n  !dl_courier_partner.isValid\n|| \n  !txt_dispatch_date.isValid\n}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "36b6pikxzj",
+  "leftColumn": 46.43004115226338,
+  "minWidth": 120,
+  "mobileBottomRow": 73.6,
+  "mobileLeftColumn": 48.19753086419753,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 69.6,
+  "needsErrorInfo": false,
+  "onClick": "{{  update_dispatch_details.run().then(() => {\n    return update_as_dispatched.run();\n  }).then(() => {\n    return update_stock.run({\n      \"salesorder_number\": Table1.selectedRow.salesorder_number,\n      \"salesorder_id\": Table1.selectedRow.salesorder_id\n    });\n  }).then(() => {\n    closeModal(md_dispatch.name);\n    get_salesorder.run();\n    showAlert('Sales order dispatched successfully.', 'success');\n  }).catch((err) => {\n    showAlert('Failed to dispatch order: ' + err.message, 'error');\n  });\n}}",
+  "parentId": "534p8i1sma",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "text": "Move to dispatch",
+  "topRow": 36.400000000000006,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "monvqen0gj",
+  "widgetName": "Button3"
+}

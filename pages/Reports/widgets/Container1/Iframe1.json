@@ -1,0 +1,63 @@
+{
+  "alignment": "start",
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": 1,
+  "bottomRow": 46.2,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "displayName": "Iframe",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "srcDoc"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a84667dbdc548d14f7c83df551151550.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": "{{opps.report_data_type[report_type.selectedOptionValue] == 'PDF'}}",
+  "key": "901id9rhav",
+  "leftColumn": 0,
+  "mobileBottomRow": 38.8,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 6.8,
+  "parentColumnSpace": 13.21875,
+  "parentId": "2hzmruj8tx",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "embed"
+  ],
+  "source": "",
+  "srcDoc": "{{opps.loading ? '<p>Loading</p>' : get_report.data.html}}",
+  "tags": [
+    "Display"
+  ],
+  "title": "",
+  "topRow": 7.2,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "n8lofoli4t",
+  "widgetName": "Iframe1",
+  "widthInPercentage": 0.9711431742508324
+}

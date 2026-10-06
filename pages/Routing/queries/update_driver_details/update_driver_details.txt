@@ -1,0 +1,7 @@
+{
+ 	"response": {{delivery_routes.data[0].response}},
+ 	"timestamp":  '{{delivery_routes.data[0].timestamp}}',
+	"route": '{{routes_table.triggeredRow.index - 1}}',
+	"driverName": '{{routes_table.triggeredRow.driverName}}',
+	"driverPhone": '{{routes_table.triggeredRow.driverPhone}}'
+}

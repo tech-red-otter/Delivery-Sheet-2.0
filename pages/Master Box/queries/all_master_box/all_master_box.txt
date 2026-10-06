@@ -1,0 +1,1 @@
+SELECT * FROM delivery_export."master_box" where active is true

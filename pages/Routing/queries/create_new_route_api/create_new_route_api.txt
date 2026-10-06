@@ -1,0 +1,5 @@
+{
+ 	"response": {{delivery_routes1.data[0].response}},
+ 	"timestamp":  '{{delivery_routes1.data[0].timestamp}}',
+	"deliveryPartner": {{ active_delivery_partners1.data.find(dp => dp.partner_name == new_route_delivery_partner.selectedOptionValue)}}
+}

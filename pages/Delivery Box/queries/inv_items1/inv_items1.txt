@@ -1,0 +1,1 @@
+SELECT sku as value, name as label, sku, COALESCE(NULLIF(package_details ->> 'weight', ''), '0') AS weight  FROM delivery.inv_items where status <> 'inactive'

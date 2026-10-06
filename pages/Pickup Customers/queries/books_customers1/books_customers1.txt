@@ -1,0 +1,3 @@
+ SELECT contact_id as value, contact_name as label 
+  FROM public.customers
+  

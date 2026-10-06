@@ -1,0 +1,6 @@
+INSERT INTO delivery_export."exceptions" (
+	"customer",
+	"products")
+VALUES (
+	'{{insert_form.formData.customer}}',
+	'{{insert_form.formData.products}}');

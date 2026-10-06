@@ -1,0 +1,1 @@
+{{ { id: data_table.triggeredRow.delivery_id } }}

@@ -1,0 +1,3 @@
+SELECT * FROM delivery.delivery_routes where shipment_date = '{{shipment_date.formattedDate}}' 
+--and timestamp='2026-07-31 11:53:13.113+00'::timestamp
+order by timestamp desc limit 1

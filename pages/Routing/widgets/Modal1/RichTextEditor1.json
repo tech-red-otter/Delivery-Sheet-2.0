@@ -1,0 +1,65 @@
+{
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 36.2,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultText": "{{shipment_date.formattedDate}}\n<br>\n<br>\n\n{{Table1.tableData.map(t => `${t.partner_name}: ${t.number_of_riders} riders`).join('<br>')}}",
+  "displayName": "Rich Text Editor",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.074d534389d0f6262ecfbd8e81539d08.svg",
+  "inputType": "html",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isToolbarHidden": true,
+  "isVisible": true,
+  "key": "xcxrdi810n",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Confirmation",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 35.6,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 5.6,
+  "parentColumnSpace": 6.96875,
+  "parentId": "8a962hixrq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "input",
+    "rte"
+  ],
+  "tags": [
+    "Inputs"
+  ],
+  "topRow": 5.2,
+  "type": "RICH_TEXT_EDITOR_WIDGET",
+  "version": 1,
+  "widgetId": "0zl0fvaitz",
+  "widgetName": "RichTextEditor1",
+  "widthInPercentage": 0.4466926070038911
+}

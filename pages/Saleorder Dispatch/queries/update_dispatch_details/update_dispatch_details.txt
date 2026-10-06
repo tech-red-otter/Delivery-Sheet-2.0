@@ -1,0 +1,9 @@
+update delivery.sales_orders_dispatch set dispatch_date='{{txt_dispatch_date.formattedDate}}',
+dispatch_number='{{txt_dispatch_number.text}}',
+length={{txt_length.text}},
+diameter={{txt_diameter.text}},
+height={{txt_height.text}},
+weight={{txt_weight.text}},
+no_of_boxes={{txt_boxes.text}},
+carrier_id={{dl_courier_partner.selectedOptionValue}}
+where salesorder_id='{{Table1.selectedRow.salesorder_id}}';

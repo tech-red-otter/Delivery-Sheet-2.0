@@ -1,0 +1,76 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 19.600000000000005,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_table.selectedRow.curated_box_name))(curated_box_for_selected.options, curated_box_for_selected.serverSideFiltering) }}",
+  "displayName": "MultiSelect",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.801e0376f5d71c420e7b490da23a44a6.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "reh0gwfjyz",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Curated Box",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 18.799999999999997,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 12.2,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 9.6953125,
+  "parentId": "36quimiff9",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option(s)",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "dropdown",
+    "tags"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{inv_box2.data}}",
+  "tags": [
+    "Select"
+  ],
+  "topRow": 13,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "vcc0n78x44",
+  "widgetName": "curated_box_for_selected"
+}

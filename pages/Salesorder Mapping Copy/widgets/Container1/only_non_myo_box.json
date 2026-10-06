@@ -1,0 +1,55 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9.2,
+  "defaultCheckedState": true,
+  "displayName": "Checkbox",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.7b004ee098ca948e952234e7baec6d11.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "stul8gq0f0",
+  "label": "Non MYO box ",
+  "labelPosition": "Right",
+  "leftColumn": 20.08576998050682,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 18.400000000000002,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 14.400000000000002,
+  "parentColumnSpace": 9.6953125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 40.17153996101365,
+  "searchTags": [
+    "boolean"
+  ],
+  "tags": [
+    "Toggles"
+  ],
+  "topRow": 5.2,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "i3dbpmscx0",
+  "widgetName": "only_non_myo_box"
+}

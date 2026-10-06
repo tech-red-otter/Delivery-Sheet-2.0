@@ -1,0 +1,14 @@
+(	
+	SELECT DISTINCT customer_id as value, contact_name as label 
+	FROM public.customers
+	WHERE customer_id = '{{data_table.selectedRow.customer_name}}'
+)
+UNION ALL
+(
+	SELECT DISTINCT customer_id as value, contact_name as label 
+	FROM public.customers
+	WHERE contact_name ILIKE '%' || '{{selected_box_customer.filterText}}' || '%'
+	AND customer_id <> '{{data_table.selectedRow.customer_name}}'
+	LIMIT 10
+)
+LIMIT 11;

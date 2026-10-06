@@ -1,0 +1,2 @@
+INSERT INTO delivery."master_box" ("box_code",	"active")
+VALUES ('{{insert_form.formData.box_code?.trim()}}',TRUE);

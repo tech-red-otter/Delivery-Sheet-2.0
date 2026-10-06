@@ -1,0 +1,157 @@
+{
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11.8,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonaznopqq9uk.buttonColor"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButtonaznopqq9uk.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "new-layers",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Add new Route",
+      "menuItems": {},
+      "onClick": "{{showModal('Modal5');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "eye-open",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Verify All Routes",
+      "menuItems": {},
+      "onClick": "{{validate_routes.run().then(() => {\n  showModal('Modal6');\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton3": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "bring-data",
+      "id": "groupButton3",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Get Route",
+      "menuItems": {
+        "menuItem1": {
+          "backgroundColor": "#FFFFFF",
+          "id": "menuItem1",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "First Option",
+          "onClick": "",
+          "widgetId": ""
+        }
+      },
+      "onClick": "{{opps.refreshAllData();}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtonaznopqq9uk": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "buttonVariant": "filled",
+      "iconName": "automatic-updates",
+      "id": "groupButtonaznopqq9uk",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Generate Routes",
+      "menuItems": {},
+      "onClick": "{{showModal('Modal7');}}",
+      "placement": "CENTER",
+      "widgetId": "m46qpibx7q"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isDisabled": "{{shipment_date.formattedDate.length < 1 }}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "rg9nllz76y",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 11.399999999999999,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 7.3999999999999995,
+  "orientation": "horizontal",
+  "parentColumnSpace": 13.671875,
+  "parentId": "a81vqwd62y",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 7.8,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "9zdabzr81v",
+  "widgetName": "ButtonGroup1"
+}

@@ -1,0 +1,97 @@
+{
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtontrj7sjd3ot.buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButtontrj7sjd3ot.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "box",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Inventory",
+      "menuItems": {},
+      "onClick": "{{INV_SYNC.run().then(() => {\n  showAlert('INVENTORY SYNC STARTED', 'success');\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtontrj7sjd3ot": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "buttonVariant": "filled",
+      "iconName": "shopping-cart",
+      "id": "groupButtontrj7sjd3ot",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Sales orders",
+      "menuItems": {},
+      "onClick": "{{SO_SYNC.run().then(() => {\n  showAlert('SYNC STARTED', '');\n});}}",
+      "placement": "CENTER",
+      "widgetId": "qddacm0a99"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "a03ss1pmsu",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
+  "orientation": "horizontal",
+  "parentColumnSpace": 14.421875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 0,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "41p96wb3lc",
+  "widgetName": "sync_buttons"
+}

@@ -1,0 +1,116 @@
+{
+  "appIsExample": false,
+  "applicationDetail": {
+    "appPositioning": {
+      "type": "AUTO"
+    },
+    "navigationSetting": {
+      "colorStyle": "light",
+      "itemStyle": "text",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "inline",
+      "orientation": "top",
+      "position": "static",
+      "showNavbar": true,
+      "showSignIn": true
+    },
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
+    }
+  },
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#C7F3F0",
+  "evaluationVersion": 2,
+  "icon": "bag",
+  "pages": [
+    {
+      "id": "SYNC JOBS",
+      "isDefault": false
+    },
+    {
+      "id": "Admin",
+      "isDefault": false
+    },
+    {
+      "id": "Master Box",
+      "isDefault": false
+    },
+    {
+      "id": "Exceptions",
+      "isDefault": false
+    },
+    {
+      "id": "Salesorder Mapping",
+      "isDefault": false
+    },
+    {
+      "id": "Delivery Box",
+      "isDefault": false
+    },
+    {
+      "id": "Composite Products",
+      "isDefault": false
+    },
+    {
+      "id": "Pickup Customers",
+      "isDefault": false
+    },
+    {
+      "id": "Deliveries",
+      "isDefault": false
+    },
+    {
+      "id": "Delivery Partners",
+      "isDefault": false
+    },
+    {
+      "id": "Routing",
+      "isDefault": false
+    },
+    {
+      "id": "Reports",
+      "isDefault": false
+    },
+    {
+      "id": "Saleorder Dispatch",
+      "isDefault": false
+    },
+    {
+      "id": "Salesorder Mapping Copy",
+      "isDefault": false
+    },
+    {
+      "id": "Home",
+      "isDefault": true
+    },
+    {
+      "id": "dispatch label",
+      "isDefault": false
+    }
+  ],
+  "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "AUTO"
+    },
+    "navigationSetting": {
+      "colorStyle": "light",
+      "itemStyle": "text",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "inline",
+      "orientation": "top",
+      "position": "static",
+      "showNavbar": true,
+      "showSignIn": true
+    },
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
+    }
+  }
+}

@@ -1,0 +1,3 @@
+UPDATE delivery_export."exceptions" set
+		"products" = '{{ update_form.formData.products }}'
+WHERE "customer" = '{{data_table.selectedRow.customer}}';

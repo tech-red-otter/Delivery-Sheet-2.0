@@ -1,0 +1,4 @@
+{
+  "salesorder_number": "{{this.params.salesorder_number}}",
+  "salesorder_id": "{{this.params.salesorder_id}}"
+}

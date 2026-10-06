@@ -1,0 +1,103 @@
+{
+  "gitSyncId": "667936e8fd08ec4bd69cc0e7_669f4c6569e6fd05aff6fdf1",
+  "unpublishedPage": {
+    "isHidden": false,
+    "layouts": [
+      {
+        "dsl": {
+          "backgroundColor": "none",
+          "bottomRow": 5420.796874999998,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "flexLayers": [
+            {
+              "children": [
+                {
+                  "align": "start",
+                  "id": "8ftjjeccfj"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "center",
+                  "id": "zoghypricp"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "start",
+                  "id": "vu28rmxbma"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "center",
+                  "id": "9cdiynpa4y"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "center",
+                  "id": "y9u9mcbve6"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "end",
+                  "id": "mozvqkecmw"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "center",
+                  "id": "zgkecicw7c"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "center",
+                  "id": "85hyqyx5bl"
+                }
+              ]
+            }
+          ],
+          "leftColumn": 0,
+          "minHeight": 550,
+          "mobileBottomRow": 5606.000000000002,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "vertical",
+          "responsiveBehavior": "fill",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 53,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": true,
+          "version": 94,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
+      }
+    ],
+    "name": "Routing",
+    "slug": "routing"
+  }
+}

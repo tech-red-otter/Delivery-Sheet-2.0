@@ -1,0 +1,11 @@
+UPDATE delivery_export."backend_autorouting" SET
+		"max_tasks_per_rider" = '{{update_form.fieldState.max_tasks_per_rider.isVisible ? update_form.formData.max_tasks_per_rider : update_form.sourceData.max_tasks_per_rider}}',
+    "max_box_per_rider" = '{{update_form.fieldState.max_box_per_rider.isVisible ? update_form.formData.max_box_per_rider : update_form.sourceData.max_box_per_rider}}',
+		"max_weight_per_rider" = '{{update_form.fieldState.max_weight_per_rider.isVisible ? update_form.formData.max_weight_per_rider : update_form.sourceData.max_weight_per_rider}}',
+		"max_travel_time" = '{{update_form.fieldState.max_travel_time.isVisible ? update_form.formData.max_travel_time : update_form.sourceData.max_travel_time}}',
+		"speed_factor" = '{{update_form.fieldState.speed_factor.isVisible ? update_form.formData.speed_factor : update_form.sourceData.speed_factor}}',
+		"start_location" = '{{update_form.fieldState.start_location.isVisible ? update_form.formData.start_location : update_form.sourceData.start_location}}',
+		"end_location" = '{{update_form.fieldState.end_location.isVisible ? update_form.formData.end_location : update_form.sourceData.end_location}}',
+		"skills" = '{{update_form.fieldState.skills.isVisible ? update_form.formData.skills : update_form.sourceData.skills}}',
+		"active" = '{{update_form.fieldState.active.isVisible ? update_form.formData.active : update_form.sourceData.active}}'
+WHERE "partner_name" = {{data_table.selectedRow.partner_name}};

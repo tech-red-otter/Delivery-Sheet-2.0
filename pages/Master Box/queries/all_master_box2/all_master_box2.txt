@@ -1,0 +1,1 @@
+SELECT * FROM delivery.master_box where active is true

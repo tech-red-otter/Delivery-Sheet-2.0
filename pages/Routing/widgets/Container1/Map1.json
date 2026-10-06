@@ -1,0 +1,67 @@
+{
+  "alignment": "start",
+  "allowZoom": true,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 241.8,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultMarkers": "{{data_ops.steps_list.data.map(rt => {return { lat: rt.location[1], long:rt.location[0], title: rt.description ?? rt.type} }).concat(unassigned.selectedRows.map(rt => {return { lat: rt.location[1], long:rt.location[0], title: rt.description, color: 'gray', description: 'unassigned'} })) }}",
+  "displayName": "Map",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultMarkers"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "mapCenter"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onMarkerClick"
+    }
+  ],
+  "enableCreateMarker": false,
+  "enableMapTypeControl": false,
+  "enablePickLocation": true,
+  "enableSearch": false,
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.5d50414980b866c69864af79042fa1f9.svg",
+  "isClickedMarkerCentered": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": false,
+  "key": "scpa2oxb4c",
+  "leftColumn": 0,
+  "mapCenter": "",
+  "minWidth": 450,
+  "mobileBottomRow": 259.4,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 219.39999999999998,
+  "onMarkerClick": "{{opps.marker_handler();}}",
+  "parentColumnSpace": 13.390625,
+  "parentId": "a81vqwd62y",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "tags": [
+    "Content"
+  ],
+  "topRow": 201.79999999999995,
+  "type": "MAP_WIDGET",
+  "version": 1,
+  "widgetId": "xmd89xcfkp",
+  "widgetName": "Map1",
+  "zoomLevel": 50
+}

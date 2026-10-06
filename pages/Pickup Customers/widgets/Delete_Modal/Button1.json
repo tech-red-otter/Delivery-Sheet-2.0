@@ -1,0 +1,42 @@
+{
+  "alignment": "end",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14.4,
+  "boxShadow": "none",
+  "buttonColor": "#2E3D49",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "flexVerticalAlignment": "end",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "true",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 30.315789473684205,
+  "minWidth": 120,
+  "mobileBottomRow": 13.600000000000001,
+  "mobileLeftColumn": 30.315789473684205,
+  "mobileRightColumn": 47.1578947368421,
+  "mobileTopRow": 9.600000000000001,
+  "onClick": "{{closeModal('Delete_Modal')}}",
+  "parentId": "zi8fjakv8o",
+  "recaptchaType": "V3",
+  "responsiveBehavior": "hug",
+  "rightColumn": 47.157894736842096,
+  "text": "Cancel",
+  "topRow": 10.4,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "lryg8kw537",
+  "widgetName": "Button1"
+}

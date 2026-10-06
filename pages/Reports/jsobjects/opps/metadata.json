@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "667936e8fd08ec4bd69cc0e7_66a8abbaa38d7061b5c10314",
+  "id": "Reports_opps",
+  "unpublishedCollection": {
+    "name": "opps",
+    "pageId": "Reports",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "all_report",
+        "value": "[{\n  name: \"Sales Order Data\",\n  code: \"SALES_ORDER_DATA\"\n}, {\n  name: \"Delivery Box Content Print\",\n  code: \"DELIVERY_BOX_CONTENT_PRINT\"\n}, {\n  name: \"Composite Box Content Print\",\n  code: \"COMPOSITE_BOX_PRINT\"\n}, {\n  name: \"Total Boxes\",\n  code: \"TOTAL_BOXES\"\n}, {\n  name: \"Sales order Print\",\n  code: \"SALES_ORDER_PRINT\"\n}, {\n  name: \"Pickup Orders\",\n  code: \"PICKUP_ORDERS\"\n}, {\n  name: \"Labels\",\n  code: \"LABELS\"\n}, {\n  name: \"Merge Orders\",\n  code: \"MERGE_ORDERS\"\n}, {\n  name: \"Dispatch\",\n  code: \"DISPATCH\"\n}, {\n  name: \"To Pack\",\n  code: \"TO_PACK\"\n}, {\n  name: \"To Order\",\n  code: \"TO_ORDER\"\n}, {\n  name: \"SZCUS Data\",\n  code: \"SZCUS\"\n}, {\n  name: \"ZBOX Data\",\n  code: \"SZCUS_2\"\n}, {\n  name: \"Future Data\",\n  code: \"FUTURE_BOX_COUNT\"\n}]"
+      },
+      {
+        "name": "report_data_type",
+        "value": "{\n  \"SALES_ORDER_DATA\": \"PDF\",\n  \"DELIVERY_BOX_CONTENT_PRINT\": \"PDF\",\n  \"COMPOSITE_BOX_PRINT\": \"PDF\",\n  \"TOTAL_BOXES\": \"PDF\",\n  \"SALES_ORDER_PRINT\": \"PDF\",\n  \"PICKUP_ORDERS\": \"PDF\",\n  \"LABELS\": \"PDF\",\n  \"MERGE_ORDERS\": \"PDF\",\n  \"DISPATCH\": \"EXCEL\",\n  \"TO_PACK\": \"EXCEL\",\n  \"TO_ORDER\": \"EXCEL\",\n  \"SZCUS\": \"EXCEL\",\n  \"SZCUS_2\": \"EXCEL\",\n  \"FUTURE_BOX_COUNT\": \"PDF\",\n  \"DISPATCH_SLIP\": \"PDF\"\n}"
+      },
+      {
+        "name": "loading",
+        "value": "true"
+      },
+      {
+        "name": "creating",
+        "value": "true"
+      }
+    ]
+  }
+}

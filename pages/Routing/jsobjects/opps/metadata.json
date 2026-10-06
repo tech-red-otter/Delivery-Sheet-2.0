@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "667936e8fd08ec4bd69cc0e7_669ffbe869e6fd05aff6fe16",
+  "id": "Routing_opps",
+  "unpublishedCollection": {
+    "name": "opps",
+    "pageId": "Routing",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "temp_vars",
+        "value": "[]"
+      }
+    ]
+  }
+}

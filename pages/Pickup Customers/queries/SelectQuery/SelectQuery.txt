@@ -1,0 +1,6 @@
+SELECT *,
+COUNT(*) OVER() AS total_count 
+FROM delivery_export."pickup_customers"
+WHERE "id" ilike '%{{data_table.searchText || ""}}%'
+LIMIT {{data_table.pageSize}}
+OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};

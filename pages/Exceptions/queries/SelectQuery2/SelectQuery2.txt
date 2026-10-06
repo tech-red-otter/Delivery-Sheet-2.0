@@ -1,0 +1,6 @@
+SELECT expe.customer,bc.contact_name, expe.products FROM delivery.exceptions expe
+LEFT JOIN public.customers bc on expe.customer = bc.customer_id
+WHERE bc.contact_name ilike '%{{data_table.searchText || ""}}%'
+ORDER BY "{{data_table.sortOrder.column || 'customer'}}" {{data_table.sortOrder.order || 'ASC'}}
+LIMIT {{data_table.pageSize}}
+OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};

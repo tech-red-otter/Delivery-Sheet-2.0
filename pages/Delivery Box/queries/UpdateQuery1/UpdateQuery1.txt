@@ -1,0 +1,4 @@
+UPDATE delivery.delivery_box
+SET "products" = ARRAY [{{update_form.formData.products.map(product => `'{ "name": "${product.name}", "weight": ${(product.weight  ?? 0) === 0 ? inv_items1.data.find(inv_item => inv_item.value.toUpperCase() === product.name.toUpperCase()).weight : product.weight}, "quantity": ${product.quantity} }'`).join(",")}}]::jsonb [],
+"packaging_details" = '{{utils.packaging_details()}}'
+WHERE id = '{{data_table.selectedRow.id}}'::uuid;

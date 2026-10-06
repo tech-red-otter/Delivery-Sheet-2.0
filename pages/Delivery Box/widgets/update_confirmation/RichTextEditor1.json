@@ -1,0 +1,65 @@
+{
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 64.2,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultText": "### <span style=\"color:#8e44ad;\">Total Weight:</span> <span style=\"color:#27ae60;\">{{utils.update_form_total_weight()}} KG</span><span style=\"color:#8e44ad;\"> **<span style=\"color:#27ae60;\">{{JSON.parse(utils.packaging_details()).packaging}}</span>**\n\n### <span style=\"color:#8e44ad;\">Products :</span>\n**<span style=\"color:#27ae60;\">{{utils.update_products()}}</span>**\n\n",
+  "displayName": "Rich Text Editor",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.074d534389d0f6262ecfbd8e81539d08.svg",
+  "inputType": "markdown",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isToolbarHidden": true,
+  "isVisible": true,
+  "key": "qrl52qjah6",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Update values",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 45.2,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 15.200000000000003,
+  "parentColumnSpace": 6.96875,
+  "parentId": "icmhtrxb8d",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "input",
+    "rte"
+  ],
+  "tags": [
+    "Inputs"
+  ],
+  "topRow": 5.2,
+  "type": "RICH_TEXT_EDITOR_WIDGET",
+  "version": 1,
+  "widgetId": "ap495y3ssk",
+  "widgetName": "RichTextEditor1",
+  "widthInPercentage": 0.3470817120622568
+}

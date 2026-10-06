@@ -1,0 +1,2 @@
+DELETE FROM delivery.exceptions
+  WHERE "customer" = {{data_table.triggeredRow.customer}};

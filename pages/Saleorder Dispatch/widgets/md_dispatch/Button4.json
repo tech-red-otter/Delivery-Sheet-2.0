@@ -1,0 +1,51 @@
+{
+  "alignment": "end",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 40.400000000000006,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "nppjq41l0i",
+  "leftColumn": 30.62757201646091,
+  "minWidth": 120,
+  "mobileBottomRow": 73.6,
+  "mobileLeftColumn": 32.39506172839506,
+  "mobileRightColumn": 48.19753086419753,
+  "mobileTopRow": 69.6,
+  "needsErrorInfo": false,
+  "onClick": "{{update_dispatch_details.run().then(() => {\n  showAlert('Sales order updated successfully.', 'success');\n  closeModal(md_dispatch.name);\n  get_salesorder.run();\n});}}",
+  "parentColumnSpace": 6.96875,
+  "parentId": "534p8i1sma",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 46.43004115226338,
+  "text": "Save",
+  "topRow": 36.400000000000006,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "ykplaugj5g",
+  "widgetName": "Button4"
+}

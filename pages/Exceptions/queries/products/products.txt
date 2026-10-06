@@ -1,0 +1,13 @@
+Select products as LABEL, products as VALUE from (SELECT DISTINCT
+  CASE
+    WHEN custom_field_hash ->> 'cf_rof_product_variation' IS NOT NULL AND custom_field_hash ->> 'cf_rof_product_variation' != 'NA'
+    THEN (custom_field_hash ->> 'cf_rof_products')::text || ': ' || (custom_field_hash ->> 'cf_rof_product_variation')::text
+    ELSE (custom_field_hash ->> 'cf_rof_products')::text
+  END AS products
+FROM data_imports_n8n.inv_items
+UNION
+SELECT DISTINCT
+  (custom_field_hash ->> 'cf_rof_products')::text
+FROM data_imports_n8n.inv_items 
+ORDER BY products)
+WHERE products IS NOT NULL

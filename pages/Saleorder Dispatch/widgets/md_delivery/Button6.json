@@ -1,0 +1,58 @@
+{
+  "alignment": "end",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 17,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{!txt_delivery_date.isValid}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "nppjq41l0i",
+  "leftColumn": 42.30508474576271,
+  "minWidth": 120,
+  "mobileBottomRow": 21.8,
+  "mobileLeftColumn": 42.30508474576271,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 17.8,
+  "needsErrorInfo": false,
+  "onClick": "{{update_as_deliverd.run().then(() => {\n  closeModal(md_delivery.name);\n  get_salesorder.run();\n  showAlert('Sales order updated as deliverd successfully.', 'success');\n});}}",
+  "parentId": "ww83xp0aal",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "text": "Confirm",
+  "topRow": 13,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "cqegeneu4e",
+  "widgetName": "Button6"
+}

@@ -1,0 +1,1 @@
+SELECT partner_name as label, partner_name as value FROM delivery_export.backend_autorouting where active is true 

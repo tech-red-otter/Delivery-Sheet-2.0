@@ -1,0 +1,64 @@
+{
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 35.2,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultText": "**Large Box:** {{update_form.sourceData.large_box}}  | **Small Box:** {{update_form.formData.small_box}}  \n**Coordinates:** {{update_form.formData.coordinates}} | {{update_form.formData.deliveryPartner}}\n```json\n{\n  \"phone\": \"{{update_form.formData.address.phone}}\",\n  \"address\": \"{{update_form.formData.address.address}}\",\n  \"street2\": \"{{update_form.formData.address.street2}}\",\n  \"city\": \"{{update_form.formData.address.city}}\",\n  \"Zip\": \"{{update_form.formData.address.Zip}}\",\n  \"state\": \"{{update_form.formData.address.state}}\",\n  \"state_code\": \"{{update_form.formData.address.state_code}}\",\n  \"country\": \"{{update_form.formData.address.country}}\",\n  \"country_code\": \"{{update_form.formData.address.country_code}}\"\n}\n```",
+  "displayName": "Rich Text Editor",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.074d534389d0f6262ecfbd8e81539d08.svg",
+  "inputType": "markdown",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isToolbarHidden": true,
+  "isVisible": true,
+  "key": "tceywazq2d",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Confirmation",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 40.4,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 10.399999999999999,
+  "parentColumnSpace": 6.96875,
+  "parentId": "pv8ojlcoye",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "input",
+    "rte"
+  ],
+  "tags": [
+    "Inputs"
+  ],
+  "topRow": 5.2,
+  "type": "RICH_TEXT_EDITOR_WIDGET",
+  "version": 1,
+  "widgetId": "7p1z6m11gv",
+  "widgetName": "RichTextEditor1"
+}

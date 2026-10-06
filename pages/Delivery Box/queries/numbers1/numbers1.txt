@@ -1,0 +1,21 @@
+SELECT
+    count(*) AS "MYO",
+    (  SELECT count(*)
+     FROM delivery.delivery_box db 
+     LEFT JOIN delivery.sales_orders_map som 
+     ON db.id = som.delivery_box::uuid 
+     WHERE db.shipment_date = {{shipment_date.formattedDate}}
+     AND (som.make_your_own = 'false' or som.make_your_own is null) 
+     AND db.master_box IS NULL
+		 AND db.box_code != 'BLANK_BOX' 
+		 AND db.id not in (SELECT master_box from delivery.delivery_box WHERE shipment_date = {{shipment_date.formattedDate}} and archived = true and master_box is not null group by master_box )) AS "MASTER"
+FROM
+    delivery.delivery_box db 
+JOIN 
+    delivery.sales_orders_map som 
+ON 
+    db.id = som.delivery_box::uuid 
+WHERE 
+    db.shipment_date = {{shipment_date.formattedDate}} 
+    AND som.make_your_own = 'true'
+		AND som.archived != true;

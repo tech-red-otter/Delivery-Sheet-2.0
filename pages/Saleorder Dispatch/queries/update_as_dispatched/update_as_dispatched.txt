@@ -1,0 +1,2 @@
+update delivery.sales_orders_dispatch set status='dispatched'
+where salesorder_id='{{Table1.selectedRow.salesorder_id}}'

@@ -1,0 +1,84 @@
+{
+  "gitSyncId": "667936e8fd08ec4bd69cc0e7_668dc024a3c2252976088f96",
+  "unpublishedPage": {
+    "isHidden": false,
+    "layouts": [
+      {
+        "dsl": {
+          "backgroundColor": "none",
+          "bottomRow": 1624,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "flexLayers": [
+            {
+              "children": [
+                {
+                  "align": "start",
+                  "id": "mvubsemxfo"
+                },
+                {
+                  "align": "start",
+                  "id": "y5cjzuxnb3"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "start",
+                  "id": "1nusufaxud"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "end",
+                  "id": "bgf0cde86e"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "start",
+                  "id": "8cfdc22mmg"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "align": "start",
+                  "id": "lfaa5b2448"
+                }
+              ]
+            }
+          ],
+          "leftColumn": 0,
+          "minHeight": 900,
+          "mobileBottomRow": 4015.968750000001,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "vertical",
+          "responsiveBehavior": "fill",
+          "rightColumn": 1174,
+          "snapColumns": 64,
+          "snapRows": 125,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": true,
+          "version": 94,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
+      }
+    ],
+    "name": "Deliveries",
+    "slug": "deliveries"
+  }
+}
