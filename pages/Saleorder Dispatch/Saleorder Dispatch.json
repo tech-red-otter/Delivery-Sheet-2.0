@@ -43,11 +43,19 @@
                   "id": "n5je5zxpea"
                 }
               ]
+            },
+            {
+              "children": [
+                {
+                  "align": "center",
+                  "id": "1ko0kgniwc"
+                }
+              ]
             }
           ],
           "leftColumn": 0,
           "minHeight": 560,
-          "mobileBottomRow": 1536,
+          "mobileBottomRow": 2036.0000000000002,
           "mobileTopRow": 0,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,

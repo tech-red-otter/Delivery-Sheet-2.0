@@ -1,0 +1,6 @@
+{
+  "salesorder_id": {{Table2.selectedRow.salesorder_id}},
+  "salesorder_number": {{Table2.selectedRow.salesorder_number}},
+  "shipment_date": {{Table2.selectedRow.date}},
+  "next_date": {{txt_new_date.formattedDate}}
+}

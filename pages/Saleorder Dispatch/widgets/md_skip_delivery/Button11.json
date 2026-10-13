@@ -1,0 +1,58 @@
+{
+  "alignment": "end",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 24.800000000000004,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{Table2.selectedRow.date>=txt_new_date.formattedDate}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "tduxaoj2g1",
+  "leftColumn": 47.08370044052863,
+  "minWidth": 120,
+  "mobileBottomRow": 29.200000000000003,
+  "mobileLeftColumn": 47.08370044052863,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 25.200000000000003,
+  "needsErrorInfo": false,
+  "onClick": "{{skip_order.run().then(() => {\n  showAlert('Sales order updated successfully.', 'info');\n  get_salesorders_ncr.run();\n});}}",
+  "parentId": "p7otv4opa2",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "text": "Skip",
+  "topRow": 20.800000000000004,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "uoxse5e1qi",
+  "widgetName": "Button11"
+}
