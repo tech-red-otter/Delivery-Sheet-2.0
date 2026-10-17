@@ -2,7 +2,7 @@
   "alignment": "start",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 105.20000000000036,
+  "bottomRow": 110.40000000000033,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
@@ -211,7 +211,7 @@
   "tags": [
     "Layout"
   ],
-  "topRow": 86.19999999999999,
+  "topRow": 91.39999999999998,
   "type": "MODAL_WIDGET",
   "version": 2,
   "widgetId": "oke59tmqmz",

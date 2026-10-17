@@ -6,7 +6,7 @@
   "borderColor": "#fff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 82.99999999999996,
+  "bottomRow": 88.19999999999996,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -293,7 +293,7 @@
   "mobileBottomRow": 181.7,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 64,
-  "mobileTopRow": 124.69999999999999,
+  "mobileTopRow": 124.70000000000003,
   "onSubmit": "{{update_mapping.run().then(() => {\n  showAlert('UPDATED', 'success');\n  SelectQuery.run().then(() => {\n    master_box2.run();\n  });\n}).catch(() => {\n  showAlert('UNABLE TO UPDATE', 'error');\n});}}",
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
@@ -686,7 +686,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Box Mapping for : {{data_table.selectedRow.salesorder_number}}",
-  "topRow": 26.00000000000001,
+  "topRow": 31.20000000000001,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "y5cjzuxnb3",
