@@ -54,7 +54,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{\n\"FROM ZOHO - \" + zoho_salesorders.data.total_orders+ ' | MYO - ' + zoho_salesorders.data.totals_by_category[\"Make Your Own\"] +' | CURATED - ' + zoho_salesorders.data.totals_by_category[\"Curated Box\"]\n}}",
+  "text": "{{\n  \"FROM ZOHO - \" + (zoho_salesorders.data.total_orders || 0) + \n  \" | MYO - \" + (zoho_salesorders.data.totals_by_category?.[\"Make Your Own\"] || 0) + \n  \" | CURATED - \" + (zoho_salesorders.data.totals_by_category?.[\"Curated Box\"] || 0)\n}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 20.80000000000001,
