@@ -2,14 +2,14 @@
   "alignment": "start",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 182.9,
+  "bottomRow": 190.7,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 662,
+      "bottomRow": 660,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -190,10 +190,10 @@
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 8,
-  "mobileBottomRow": 247.9,
+  "mobileBottomRow": 255.30000000000004,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 24,
-  "mobileTopRow": 201.5,
+  "mobileTopRow": 208.90000000000003,
   "parentColumnSpace": 9.6953125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -208,7 +208,7 @@
   "tags": [
     "Layout"
   ],
-  "topRow": 116.7,
+  "topRow": 124.5,
   "type": "MODAL_WIDGET",
   "version": 2,
   "widgetId": "joicovjp2l",

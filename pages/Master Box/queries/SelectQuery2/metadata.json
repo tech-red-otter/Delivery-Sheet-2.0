@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM delivery.master_box\nWHERE box_code ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'box_code'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM delivery.master_box\nWHERE box_code ilike '%{{data_table.searchText || \"\"}}%' \n  AND (\n    '{{dl_curated_box.selectedOptionValue || \"\"}}' = '' \n    OR '{{dl_curated_box.selectedOptionValue}}' = ANY(curated_box_name)\n  )\nORDER BY \"{{data_table.sortOrder.column || 'box_code'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
