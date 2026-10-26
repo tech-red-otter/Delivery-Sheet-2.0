@@ -2,7 +2,7 @@
   "alignment": "start",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 24.80000000000001,
+  "bottomRow": 24.800000000000015,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -57,7 +57,7 @@
   "text": "{{\n  \"FROM ZOHO - \" + (zoho_salesorders.data.total_orders || 0) + \n  \" | MYO - \" + (zoho_salesorders.data.totals_by_category?.[\"Make Your Own\"] || 0) + \n  \" | CURATED - \" + (zoho_salesorders.data.totals_by_category?.[\"Curated Box\"] || 0)\n}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 20.80000000000001,
+  "topRow": 20.800000000000008,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
