@@ -1,7 +1,7 @@
 {
   "alignment": "start",
   "borderRadius": "0px",
-  "bottomRow": 4,
+  "bottomRow": 9.4390625,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -35,7 +35,7 @@
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
   "responsiveBehavior": "fill",
-  "rightColumn": 12.347953216374272,
+  "rightColumn": 12.347953216374265,
   "text": "Sales order mapping",
   "textAlign": "LEFT",
   "textColor": "#231F20",

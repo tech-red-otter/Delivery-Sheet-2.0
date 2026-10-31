@@ -1,7 +1,7 @@
 {
   "alignment": "start",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9.2,
+  "bottomRow": 14.6390625,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -44,7 +44,7 @@
   "parentRowSpace": 10,
   "responsiveBehavior": "hug",
   "rightColumn": 64,
-  "topRow": 5.2,
+  "topRow": 10.6390625,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "xp5u9a9nzq",

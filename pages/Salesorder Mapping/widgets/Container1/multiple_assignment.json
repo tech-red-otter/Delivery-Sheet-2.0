@@ -2,7 +2,7 @@
   "alignment": "start",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 17.099999999999998,
+  "bottomRow": 22.5390625,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -57,7 +57,7 @@
     "Buttons"
   ],
   "tooltip": "Assign box to selected",
-  "topRow": 13,
+  "topRow": 18.4390625,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "544fnhs7jf",

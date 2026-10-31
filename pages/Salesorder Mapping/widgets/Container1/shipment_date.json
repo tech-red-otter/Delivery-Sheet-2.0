@@ -3,7 +3,7 @@
   "alignment": "start",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 11.8,
+  "bottomRow": 17.2390625,
   "boxShadow": "none",
   "closeOnSelection": true,
   "dateFormat": "YYYY-MM-DD",
@@ -63,7 +63,7 @@
     "Inputs"
   ],
   "timePrecision": "minute",
-  "topRow": 5.2,
+  "topRow": 10.6390625,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
   "widgetId": "75djw4he2r",

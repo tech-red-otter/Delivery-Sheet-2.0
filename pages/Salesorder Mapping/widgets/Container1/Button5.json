@@ -2,7 +2,7 @@
   "alignment": "start",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 30.000000000000007,
+  "bottomRow": 35.439062500000006,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -64,7 +64,7 @@
     "Buttons"
   ],
   "text": "Download all data",
-  "topRow": 26.000000000000007,
+  "topRow": 31.439062500000006,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "qhjtok5g2e",

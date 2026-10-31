@@ -4,7 +4,7 @@
   "alignment": "start",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9.2,
+  "bottomRow": 14.6390625,
   "defaultCheckedState": true,
   "displayName": "Checkbox",
   "dynamicBindingPathList": [
@@ -47,7 +47,7 @@
   "tags": [
     "Toggles"
   ],
-  "topRow": 5.2,
+  "topRow": 10.6390625,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
   "widgetId": "i3dbpmscx0",

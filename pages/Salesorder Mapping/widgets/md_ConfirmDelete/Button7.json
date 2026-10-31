@@ -41,7 +41,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{delete_all_data.run().then(() => {\n  closeModal(md_ConfirmDelete.name);\n  SelectQuery2.run();\n});}}",
+  "onClick": "{{delete_all_data.run().then(() => {\n  closeModal(md_ConfirmDelete.name);\n  SelectQuery2.run();\n  removeValue('txt_confirm');\n});}}",
   "parentId": "9g7v2nft6m",
   "placement": "CENTER",
   "recaptchaType": "V3",

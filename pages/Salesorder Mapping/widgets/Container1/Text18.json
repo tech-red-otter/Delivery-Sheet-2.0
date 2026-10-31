@@ -2,7 +2,7 @@
   "alignment": "start",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 30.000000000000007,
+  "bottomRow": 35.439062500000006,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -57,7 +57,7 @@
   "text": "{{\n\"TOTAL - \" + parseInt(numbers2.data[0].MYO+ numbers2.data[0].CURATED) + \" | \" + Object.entries(numbers2.data[0]).map(([key, value]) => `${key} - ${value}`).join(' | ');\n}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 26.000000000000007,
+  "topRow": 31.439062500000006,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

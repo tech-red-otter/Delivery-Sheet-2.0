@@ -4,7 +4,7 @@
   "allowAddNewRow": false,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 88.19999999999995,
+  "bottomRow": 93.63906249999994,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "button": {
@@ -779,7 +779,7 @@
   "serverSidePaginationEnabled": false,
   "tableData": "{{SelectQuery2.data}}",
   "textSize": "0.875rem",
-  "topRow": 31.200000000000006,
+  "topRow": 36.63906250000001,
   "totalRecordsCount": "{{SelectQuery.data[0]?.total_count ?? 0}}",
   "type": "TABLE_WIDGET_V2",
   "version": 3,
