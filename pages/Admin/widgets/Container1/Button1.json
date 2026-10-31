@@ -26,7 +26,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "nlyftprhko",
-  "leftColumn": 25.407178217821784,
+  "leftColumn": 24.029239766081872,
   "minWidth": 120,
   "mobileBottomRow": 3.8,
   "mobileLeftColumn": 181.59722222222223,
@@ -41,7 +41,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 38.59282178217822,
+  "rightColumn": 39.97076023391813,
   "searchTags": [
     "click",
     "submit"

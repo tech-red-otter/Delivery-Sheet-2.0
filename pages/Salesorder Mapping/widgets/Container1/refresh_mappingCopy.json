@@ -1,0 +1,72 @@
+{
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "#ef4444",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": "{{shipment_date.formattedDate.length < 3 }}",
+  "isLoading": false,
+  "isVisible": "{{ ['manu.pratap@smartbeej.com', 'brij.satija@redotterfarms.in','ud.sarup@gmail.com'].includes(appsmith.user.email)}}",
+  "key": "46k21quv4e",
+  "leftColumn": 52.771929824561404,
+  "minWidth": 120,
+  "mobileBottomRow": 14.239062500000001,
+  "mobileLeftColumn": 33.68421052631579,
+  "mobileRightColumn": 44.91228070175438,
+  "mobileTopRow": 10.239062500000001,
+  "onClick": "{{showModal(md_ConfirmDelete.name);}}",
+  "parentColumnSpace": 9.5859375,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Delete All",
+  "topRow": 0,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "waeafnfuhj",
+  "widgetName": "refresh_mappingCopy"
+}
